@@ -14,4 +14,4 @@ sim_vcd :
 		vsim -logfile sim.log -c -do "vcd file sim.vcd; vcd add -r /*; run -all; vcd flush; quit" work.state_machine_oop
 
 wave:
-		vsim work.tb -voptargs=+acc
+		vsim -view Door_Controller.wlf
